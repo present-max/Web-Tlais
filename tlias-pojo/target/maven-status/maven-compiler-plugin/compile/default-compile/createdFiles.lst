@@ -1,0 +1,11 @@
+tliaswebmanagement\pojo\Dept.class
+tliaswebmanagement\pojo\EmpQueryParam.class
+tliaswebmanagement\pojo\LoginInfo.class
+tliaswebmanagement\pojo\Result.class
+tliaswebmanagement\pojo\JobOption.class
+tliaswebmanagement\pojo\EmpExpr.class
+tliaswebmanagement\pojo\AliyunOSSProperties.class
+tliaswebmanagement\pojo\PageResult.class
+tliaswebmanagement\pojo\OperateLog.class
+tliaswebmanagement\pojo\Emp.class
+tliaswebmanagement\pojo\EmpLog.class

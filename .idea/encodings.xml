@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/aliyun-oss-spring-boot-autoconfigure/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aliyun-oss-spring-boot-start/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aliyun-oss-spring-boot-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/http/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itheima-utils/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itheima-utils/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tlias-parent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tlias-parent/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tlias-pojo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tlias-pojo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tlias-utils/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tlias-utils/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tlias-web-managemant/src/main/java" charset="UTF-8" />
+  </component>
+</project>
