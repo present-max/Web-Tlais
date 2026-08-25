@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 // 导入了一个Importselector接口的实现类，该类重写了selectImport方法，返回了一个装有需导入bean的所有类的全类名
 // 的数组，import将每一个元素导入ioc容器，这些全类名就封装在META-INE的配置文件中，该配置文件中本来就有一些spring官方写好的类，写代码的时候可直接用
 // @Autowied获取，若要想ioc中加入自定义的bean或第三方bean，可向配置文件中加全类名，也可直接import导入，不过归根结底都是通过import导入的))、
-
+//注：只有被spring扫描管理的类中的bean才能被注入，包括@Component、@Service、@Repository、@Controller及其派生注解，还有配置类中的@Bean
 @ServletComponentScan//扫描Servlet组件(filter)
 //springboot自动配置的方法
 //1
