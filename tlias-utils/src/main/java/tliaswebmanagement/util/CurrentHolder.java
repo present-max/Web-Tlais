@@ -5,6 +5,7 @@ package tliaswebmanagement.util;
 public class CurrentHolder {
                                    //表示当前线程局部变量存储integer类型的值
     private static final ThreadLocal<Integer> CURRENT_LOCAL = new ThreadLocal<>();
+    //可以设置多个ThreadLocal变量记录多个上下文
 
     public static void setCurrentId(Integer employeeId) {
         CURRENT_LOCAL.set(employeeId);
