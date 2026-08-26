@@ -18,6 +18,7 @@ import java.util.UUID;
 
 @Component
 public class AliyunOSSOperator {
+    //
     //----------------------------方法一---------------------------------------------------------------------------
 //    @Value("${aliyun.oss.endpoint}")
 //    private String endpoint

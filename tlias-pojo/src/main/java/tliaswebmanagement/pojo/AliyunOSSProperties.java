@@ -4,6 +4,8 @@ import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
+
+//
 @Data
 @Component
 @ConfigurationProperties(prefix = "aliyun.oss")//将配置文件中的aliyun.oss.*属性值，映射到当前这个组件中

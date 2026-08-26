@@ -28,6 +28,7 @@ public class UploadController {
 @Autowired
 private AliyunOSSOperator aliyunOSSOperator;
 
+//
     @PostMapping("/upload")
     public Result upload(MultipartFile file) throws Exception {
         log.info("接受文件:" + file.getOriginalFilename());
