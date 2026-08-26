@@ -10,6 +10,7 @@
         </foreach>
     </delete>
 
+
     <select id="list" resultType="tliaswebmanagement.pojo.Emp">
         select e.*, d.name as deptName
         from emp e
