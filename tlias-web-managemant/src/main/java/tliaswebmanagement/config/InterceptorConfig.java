@@ -6,6 +6,7 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import tliaswebmanagement.interceptor.TokenInterceptor;
 
+//
 @Configuration//标记为配置类
 public class InterceptorConfig implements WebMvcConfigurer {
 
