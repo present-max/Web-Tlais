@@ -48,6 +48,7 @@
             left join emp_expr ee on e.id = ee.emp_id
             where e.id = #{id}
     </select>
+
     <resultMap id="empWithExprResultMap" type="tliaswebmanagement.pojo.Emp">
         <id column="id" property="id"/>
         <result column="username" property="username"/>
