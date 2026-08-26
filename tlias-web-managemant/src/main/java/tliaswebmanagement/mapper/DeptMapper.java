@@ -22,7 +22,7 @@ public interface DeptMapper {
     void deleteById(Integer id);
 
     @Insert("insert into dept(name,create_time,update_time) values(#{name},#{createTime},#{updateTime})")
-    void add(Dept dept);
+    void add(Dept dept);//#{}就是占位符，表示这里要传入一个参数，参数名与Dept对象的属性名一致，从中取值
 
 
     @Select("select id ,name,create_time as createTime,update_time as updateTime from dept where id=#{id}")
