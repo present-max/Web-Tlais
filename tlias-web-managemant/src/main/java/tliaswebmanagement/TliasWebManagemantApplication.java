@@ -1,12 +1,9 @@
 package tliaswebmanagement;
 
-import org.apache.http.message.TokenParser;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Import;
-import org.springframework.stereotype.Component;
 
 
 //springboot自动配置的原理
