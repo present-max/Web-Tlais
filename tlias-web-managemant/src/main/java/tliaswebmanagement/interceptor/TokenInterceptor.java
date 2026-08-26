@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import tliaswebmanagement.util.JwtUtil;
 
+//
 @Slf4j
 @Component
 public class TokenInterceptor implements HandlerInterceptor {
