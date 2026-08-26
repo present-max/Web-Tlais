@@ -13,6 +13,7 @@ public class JwtUtil {
     private static final String JWT_SECRET = "tliaswebmanagement";
     private static final long JWT_EXPIRATION = 86400000;
 
+    //
     // 原理：其组成 Header、Payload、Signature，三段都是Base64编码字符串
     // 可直接解码查看内容，但前二者只是编码，不是加密，不能存放密码
     // Header中可存签名算法，Payload中可存用户信息，二者合并根据签名算法加密出Signature用来检验，前后保持强一对一关系，
