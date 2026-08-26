@@ -42,7 +42,7 @@ public class Deptcontroller {
     // 则要将required设为false,当前端传的参数名和形参名一致时，可以省略@RequestParam注解
     @Log//添加该注解，则该方法会记录日志
     @DeleteMapping("/depts")//普通请求参数的写法，http://localhost:8080/depts?id=1
-    public Result delete(@RequestParam("id") Integer id) {
+    public Result delete(@RequestParam("id") Integer id) {//这个注解中的参数名是与url请求中的参数名一致，若url请求中的参数名与形参名一致，则可以省略该参数
         log.info("删除部门信息:"+id);
         deptService.deleteById(id);
         return Result.success();

@@ -20,6 +20,7 @@ public class Empcontroller {
     @Autowired
     private EmpService empService;
     @GetMapping                   //若前端没有给参数值，则给一个默认值
+    //
     public Result page(@RequestParam( defaultValue = "1") Integer page,
                        @RequestParam( defaultValue = "10")Integer pageSize,
                        String name, Integer gender,          //没有使用RequestParam注解，所以前端不传参，不会报错，参数值设为null
