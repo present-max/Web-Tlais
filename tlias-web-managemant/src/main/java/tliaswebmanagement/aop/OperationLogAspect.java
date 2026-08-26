@@ -13,10 +13,13 @@ import tliaswebmanagement.util.CurrentHolder;
 import java.util.Arrays;
 import java.time.LocalDateTime;
 
+//
 @Order(1)//当不同类有多个切面的切入点指向同一方法时，执行顺序按照类名排序，目标方法前的通知：字母排名靠前的先执行
          //目标方法后通知：字母排名靠后的先执行，也可通过 @Order 注解指定数字大小代替类名
-@Aspect
-@Component//必须加：这样spring才能获取这个切面类的代理对象去调用里面的方法
+@Aspect//必须加：这样spring才能识别这是一个切面类
+@Component//必须加：这样spring才能获取这个切面类找到切入点，给切入点的类注册代理对象
+//aop的原理：动态代理，Spring拿到OperationLogAspect的bean，然后根据切入点表达式找到目标类，给目标类注册代理对象，并对目标类中的切入点方法进行代理增强
+//在其他类中通过@Autowired注入的目标类对象其实是代理对象，该对象调用被标记的切入点方法时会增加额外的功能（即切面类中的功能）
 public class OperationLogAspect {
 
     @Autowired
