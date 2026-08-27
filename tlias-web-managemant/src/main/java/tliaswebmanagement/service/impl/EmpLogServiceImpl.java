@@ -10,6 +10,7 @@ import tliaswebmanagement.pojo.EmpLog;
 import tliaswebmanagement.mapper.EmpLogMapper;
 import tliaswebmanagement.service.EmpLogService;
 
+//
 @Transactional(propagation = Propagation.REQUIRES_NEW)//当调用insertLog方法时，会开启新的事务
 @Service
 @RequiredArgsConstructor//自动生成一个构造方法，该构造方法包含所有final属性和@NonNull属性

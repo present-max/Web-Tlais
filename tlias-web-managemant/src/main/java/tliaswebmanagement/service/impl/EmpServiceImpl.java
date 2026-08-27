@@ -56,6 +56,7 @@ public class EmpServiceImpl implements EmpService {
         return new PageResult<>(p.getTotal(),p.getResult());
      }
 
+     //
      @Transactional//添加事务管理-默认只回滚运行时异常，不回滚编译时异常，若需要回滚编译时异常，则需要添加@Transactional(rollbackFor = Exception.class)
     @Override
     public void save(Emp emp) {
@@ -74,7 +75,8 @@ public class EmpServiceImpl implements EmpService {
                  }
                  EmpExprMapper.insertBatch(exprList);
              }
-         } finally {//无论添加员工成功与否，都添加员工日志为防止该方法回滚，需单独给insertLog方法添加事务
+         } finally {//无论添加员工成功与否，都添加员工日志为防止该方法回滚，需单独给insertLog方法添加事务（内部事务不受外部事务的回滚影响）
+                    //若单独加事务，若save方法中出现异常，方法中的所有数据库操作都会回滚
                     EmpLog empLog = new EmpLog(null, LocalDateTime.now(), "添加员工:"+emp);
                     EmpLogService.insertLog(empLog);
          }
