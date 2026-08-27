@@ -55,6 +55,7 @@ public class EmpServiceImpl implements EmpService {
 //
 //        return pageResult;
         //------------------------------- 优化的分页查询------------------------------
+        //
         PageHelper.startPage(page,pageSize);//只有紧跟着的查询才会被分页
         //查询当前页数据，Page<T>继承了List<T>
         List<Emp> rows=EmpMapper.list(name,gender,begin,end);

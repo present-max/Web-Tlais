@@ -20,8 +20,7 @@ public interface EmpMapper {
 //    public List<Emp> list(Integer start,Integer pageSize);
 
 //------------------------------使用MyBatis(要引入依赖)中PageHelper插件的分页查询方法---------------------------------------
-    public List<
-            Emp> list(String name, Integer gender, LocalDate begin, LocalDate end);
+    List<Emp> list(String name, Integer gender, LocalDate begin, LocalDate end);
 
     //
     @Options(useGeneratedKeys = true,keyProperty = "id")//告诉MyBatis，插入成功后，将主键值回填到emp对象的id属性值中
