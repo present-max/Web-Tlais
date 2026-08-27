@@ -33,6 +33,8 @@
 
     <!-- 子模块管理聚合-->
     <!--可实现一键清除，下载，打包-->
+    <!--spring boot项目的打包，打包父模块，会将父模块的依赖与子模块的依赖与代码一起打包合并到启动类所在的jar包中-->
+    <!-- 从而实现一键部署 -->
     <modules>
         <module>../tlias-utils</module>
         <module>../tlias-pojo</module>
@@ -88,6 +90,7 @@
         </dependencies>
     </dependencyManagement>
     <build>
+        <!-- 配置插件版本管理器-->
         <pluginManagement>
             <plugins>
                 <plugin>

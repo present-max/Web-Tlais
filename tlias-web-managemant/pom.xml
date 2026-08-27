@@ -3,6 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <!-- 继承父项目 ,只继承父项目的配置-->
     <parent>
         <groupId>org.example</groupId>
         <artifactId>tlias-parent</artifactId>
@@ -110,7 +111,7 @@
             <artifactId>tlias-pojo</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <!-- 引入自定义的tlias-utils依赖-->
+        <!-- 引入自定义的tlias-utils依赖：引入该模块中的代码：引入了别人的代码，就这确保有别人需要的依赖-->
         <dependency>
             <groupId>org.example</groupId>
             <artifactId>tlias-utils</artifactId>
@@ -122,11 +123,13 @@
     <build>
         <plugins>
             <plugin>
+                <!-- maven打包用到的插件-->
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <excludes>
                         <exclude>
+                            <!-- 排除lombok依赖 ,减少打包文件大小-->
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
                         </exclude>
@@ -134,6 +137,7 @@
                 </configuration>
             </plugin>
             <plugin>
+                <!-- maven编译用到的插件-->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <executions>
@@ -146,6 +150,7 @@
                         <configuration>
                             <annotationProcessorPaths>
                                 <path>
+                                    <!-- 指定lombok注释器插件-->
                                     <groupId>org.projectlombok</groupId>
                                     <artifactId>lombok</artifactId>
                                 </path>
