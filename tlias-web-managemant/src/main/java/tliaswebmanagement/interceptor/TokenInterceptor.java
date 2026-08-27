@@ -9,7 +9,7 @@ import tliaswebmanagement.util.JwtUtil;
 
 //拦截器
 @Slf4j
-@Component
+@Component//将bean到注册ioc容器
 public class TokenInterceptor implements HandlerInterceptor {
     @Override//访问前处理，返回值true则放行，返回值false则不放行
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {

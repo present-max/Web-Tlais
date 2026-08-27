@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+//
 @Configuration
 @ConditionalOnMissingBean//当容器中没有这个组件的时候，才会创建这个组件
 public class HeaderConfig {

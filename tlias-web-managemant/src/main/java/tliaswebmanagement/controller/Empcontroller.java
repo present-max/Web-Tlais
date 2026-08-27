@@ -13,7 +13,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @RequestMapping("/emps")
-@RestController
+@RestController//里面已经包含了@Controller
 @Slf4j
 public class Empcontroller {
 
