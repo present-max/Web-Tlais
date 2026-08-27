@@ -26,6 +26,13 @@ import java.util.Map;
 @Service
 public class EmpServiceImpl implements EmpService {
 
+    //Bean的生命周期（简化版）
+    //1.BeanDefinition:容器在启动时，会读取所有的Bean定义，即所有的@Component,@Service,@Repository,@Controller,@Mapper等注解的类，生成BeanDefinition对象，
+    //2.Bean实例化：根据BeanDefinition对象，实例化Bean对象
+    //3.属性赋值：根据@Autowired,value,resourse等注解，将依赖的Bean注入到属性中
+    //4.初始化：根据@PostConstruct注解，执行初始化方法
+    //5.Bean就绪:Bean可被正常使用
+    //6.销毁：根据@PreDestroy注解，执行销毁方法
     @Autowired
     private EmpMapper EmpMapper;
     @Autowired
